@@ -4,4 +4,4 @@ Ktownfitness is a simple design fitness webpage made using HTML and CSS. It uses
 Preview is available at https://vijaypathak.com.np/ktownfitness/ 
 
 <hr/>
-<h5>Note: The resources i.e images are used only for educational purposes</h5>
+<h5>Note: The resources i.e. images are used only for educational purposes</h5>
