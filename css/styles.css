@@ -1,0 +1,88 @@
+/*list layout*/
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3BB6B8;
+  margin: auto;
+  position: center;
+  font-family: courier;
+  padding: 5px;
+}
+/*list hover effect*/
+li {
+  float: right;
+  position: center;
+}
+/*list link layout */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*list link hover effect layout*/
+li a:hover:not(.active) {
+  background-color: black;
+  margin: 1px;
+}
+/*background color in menubar*/
+.active {
+  background-color: blue;
+}
+/*logo position*/
+#logoh{
+  float: left;
+}
+/*html body margin*/
+body{
+  margin: 0;
+}
+/*footer text layout*/
+footer{
+  text-align: center;
+  font-family: courier;
+  color:black;
+}
+/*footer layout*/
+.foot{
+  background-color: #3BB6B8;
+  padding: 1px;
+}
+/*subscription text*/
+.sub{
+  color: white;
+  background-color: #5e5e63;
+  font-family: serif;
+  letter-spacing: 6px;
+  padding: 30px;
+  text-align: center;
+}
+/*subscription button*/
+.button {
+  background-color: #5e5e63;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 25px;
+}
+/*subscription button when hover layout*/
+.button:hover {
+  background-color: black;
+  color: white;
+  padding: 23px;
+}
+/*address layout*/
+address{
+  text-align: right;
+  color: white;
+  padding-bottom: 15px;
+}

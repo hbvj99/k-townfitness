@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- language english USA-->
+<html lang="en-US">
+<head>
+  <title>Subscription form</title>
+  <!--Meta tags; html5 encoding version,description, author details with intial screen scaled to 1-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="kTown fitness email subscription form">
+  <meta name="author" content="Vijay Pathak">
+  <!--favicon icon-->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <!--external javascript-->
+  <script src="../js/subscribef.js"></script>
+  <style>
+  /*input border layout*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  /*input box laypout*/
+  input[type=submit] {
+    color: black;
+    border: solid 2px black;
+    cursor: pointer;
+    padding: 20px;
+  }
+  /*inout text hover effect*/
+  input[type=submit]:hover {
+    color: black;
+    padding: 25px;
+    border: solid 2px black;
+  }
+  /*container class*/
+  .container {
+    font-family: courier;
+    background-color: #dbe0e0;
+    opacity: 0.9;
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+  }
+  /*subscribe heading*/
+  .heading{
+    font-family: arial;
+    color:  #3BB6B8;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!--container with onsumit validation linked to external javascript-->
+    <div class="heading">
+      <h1>Subscription form</h1>
+    </div>
+    <form name="contactf" onsubmit="validateForm()">
+      <!--lables with placeholders and input type text-->
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Your first name">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Your surname">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <!--scroll down options-->
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select>
+      <!--lables with placeholder and input type text-->
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email address">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

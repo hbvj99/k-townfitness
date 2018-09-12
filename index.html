@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- language english USA-->
+<html lang="en-US">
+<head>
+  <title>KTown Fitness Center</title>
+  <!--Meta tags; html5 encoding version,description, keywords, author details with intial screen scaled to 1-->
+  <meta charset="UTF-8">
+  <meta name="description" content="modern fitness center in kathmandu">
+  <meta name="keywords" content="fitness center, gym, cardio, zumba, boxing">
+  <meta name="author" content="Vijay Pathak">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--external css-->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/subscribeb.css">
+  <!-- external javascript file-->
+  <script src="js/slide.js"></script>
+  <!--Internal style-->
+  <style>
+  /* homepage gif float text layout*/
+  .fronte{
+    font-family: arial;
+    padding: 3px;
+    position: absolute;
+    top: 75%;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 15px;
+    word-spacing: 6px;
+    text-align: center;
+    width: 100%;
+  }
+  /*homepage gif float buttons layout*/
+  .subb{
+    color: white;
+    font-family: serif;
+    letter-spacing: 7px;
+    text-align: center;
+  }
+  /*Button1 layout description*/
+  .button1 {
+    background-color: #5e5e63;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 20px;
+  }
+  /*button1 hover effect*/
+  .button1:hover {
+    background-color: black;
+    color: white;
+    padding: 23px;
+  }
+  /*buy button layout description*/
+  .button2 {
+    background-color: #5e5e63;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 20px;
+  }
+  /*button2 hover effect layout*/
+  .button2:hover {
+    background-color: black;
+    color: white;
+    padding: 19.7px;
+  }
+  /*background color*/
+  .bg{
+    background-color: #3BB6B8;
+  }
+  /*marquee class*/
+  .sm{
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  /*routine layout description*/
+  .hroutine{
+    color:black;
+    background-color:#5e5e63;
+    color:white;
+    padding:10px;
+    font-family: arial;
+    font-size: 10px;
+  }
+  /*ktown fintness short description bar layout description*/
+  .hdescription{
+    font-family: arial;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: #3BB6B8;
+    letter-spacing: 2px;
+    padding: 50px;
+  }
+  /*featured product text layout*/
+  .fp{
+    background-color: white;
+    font-family: courier;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  /*timetable table layout*/
+  .timet{
+    background-color: #3BB6B8;
+    color: white;
+    font-family: arial;
+    letter-spacing: 1px;
+    padding: 30px;
+    text-align: left;
+  }
+  /*products gallery layout*/
+  .fgallery {
+    border: 1px solid #ccc;
+  }
+  /*prodyct gallery hover effect */
+  .fgallery:hover {
+    border: 1px solid #777;
+  }
+  /*product gallery images layout*/
+  .fgallery img {
+    width: 100%;
+    height: auto;
+  }
+  /*prodduct name*/
+  .desc {
+    text-align: center;
+  }
+  /*box layout*/
+  * {
+    box-sizing: border-box;
+  }
+  /*product layout*/
+  .responsive {
+    padding: 15px;;
+    float: left;
+    width: 24.99999%;
+  }
+  /*product gallery layout*/
+  @media only screen and (max-width: 700px){
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  /*resizable gallery product window layout*/
+  @media only screen and (max-width: 500px){
+    .responsive {
+      width: 100%;
+    }
+  }
+  /*product container class*/
+  .pgallery {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+    margin: 0px;
+  }
+  /*buy button class*/
+  .buyb{
+    color: white;
+    background-color: #5e5e63;
+    font-family: serif;
+    letter-spacing: 6px;
+    padding: 5px;
+    text-align: center;
+  }
+  /*Inside table layout*/
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    font-family: courier;
+    width: 50%;
+    color: white;
+  }
+  /*table head layout*/
+  th {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+  }
+  /*table data layout*/
+  td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+  }
+  /*testomonial slider class*/
+  .slidenm{
+    font-family: arial;
+    letter-spacing: 3px;
+    background-color: #afaeae;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  /*testomonial class*/
+  .tslide {
+    background-color: #dee2e2;
+    color: black;
+    font-family: arial;
+    letter-spacing: 2px;
+    padding: 70px;
+    width: 100%;
+  }
+  /*flat text layout*/
+  .tslidep{
+    font-family: verdana;
+    font-size: 13px;
+  }
+  /*image layout*/
+  .tslide img {
+    float: left;
+    margin-right: 50px;
+    border-radius: 100%;
+  }
+  /*text layout*/
+  .tslide span {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  /*hide tslide class*/
+  .tslide {
+    display:none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <!--list-->
+    <ul>
+      <div id="logoh">
+        <!--menubarlogo and favicon-->
+        <a href="index.html"><img src="images/icon.png" alt="logo2"></a>
+        <a href="index.html"><img src="images/logo.png" alt="logo" style="width:210px;height:41px;"></a>
+      </div>
+      <!--menubar pages source-->
+      <li> <a href="html/contact.html">CONTACT</a></li>
+      <li> <a href="html/products.html">PRODUCTS</a></li>
+      <li> <a href="html/service.html">SERVICE</a></li>
+      <li> <a href="html/about.html">ABOUT</a></li>
+      <li> <a href="index.html">HOME</a></li>
+    </ul>
+  </header>
+  <session>
+    <div class="bg">
+      <!--image source, width and height-->
+      <img src="images/source.gif" style="width:1360px;height:620px;" alt="source">
+    </div>
+    <div class="fronte">
+      <!--heading text-->
+      <h1>STRIVE FOR PROGESS NOT PERFECTION<br></h1>
+      <div class="subb">
+        <!--products and about buttons with link-->
+        <a href="html/products.html"><button class="button1">PRODUCTS</button></a>
+        <a href="html/about.html"><button class="button1">ABOUT US</button></a>
+      </div>
+    </div>
+  </session>
+  <div class="hdescription">
+    <!--text with inline css-->
+    <p style="color:black">WHO ARE WE?</p><br>
+    <p>We are the fitness expert located in the heart of kathmandu. A modern design and excellent service with unique instructor. Come join us, create healthy life not restrictions. Buy Latest Fitness Products here!</p>
+  </div>
+  <session>
+    <div class="sm">
+      <!--marquee image slider with hover pause/resum with image inline css-->
+      <marquee OnMouseOver="this.stop()" OnMouseOut="this.start()">
+        <img src="images/1.png" alt="1" style="width:240px;height:240px;">
+        <img src="images/2.png" alt="3" style="width:240px;height:240px;">
+        <img src="images/3.png" alt="3" style="width:240px;height:240px;">
+        <img src="images/4.png" alt="4" style="width:240px;height:240px;">
+        <img src="images/5.png" alt="5" style="width:240px;height:240px;">
+      </marquee>
+    </div>
+  </session>
+  <!--routine text with ascii code-->
+  <div class="hroutine">
+    <h1>Classes Opening &amp; Closing hours</h1>
+  </div>
+  <div class="timet">
+    <p>
+      <table>
+        <!--create table-->
+        <tr>
+          <th>Morning</th>
+          <th>Evening</th>
+        </tr>
+        <tr>
+          <td>6:00am to 11:00am</td>
+          <td>3:00pm to 8:00pm</td>
+        </tr>
+      </table>
+      <!--paragraph with view fees button below linked to service page-->
+      <p>NOTE: Saturday we're closed</p>
+      <a href="html/service.html"><button class="button">View Classes fees and rates</button></a>
+    </div>
+    <session>
+      <div class="fp">
+        <p>Our featured products!</p>
+      </div>
+    </session>
+    <!--container class for product gallery-->
+    <container class="pgallery">
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge ab-glider" href="images/ab-glider.png">
+            <img src="images/ab-glider.png" alt="ab-glider" width="600" height="400">
+          </a>
+          <div class="desc">Ab Glider &#36;10.08</div>
+          <p style="color:red;text-align:center;">20% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge exercise cycel" href="images/cycle.png">
+            <img src="images/cycle.png" alt="cycle" width="600" height="400">
+          </a>
+          <div class="desc">Exercise Cycle &#36;440.66</div>
+          <p style="color:red;text-align:center;">10% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge treadmill" href="images/treadmill.png">
+            <img src="images/treadmill.png" alt="treadmill" width="600" height="400">
+          </a>
+          <div class="desc">Treadmill &#36;500.78</div>
+          <p style="color:red;text-align:center;">25% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge gymball" href="images/gymball.png">
+            <img src="images/gymball.png" alt="gymball" width="600" height="400">
+          </a>
+          <div class="desc">Gym Ball &#36;2.04</div>
+          <p style="color:red;text-align:center;">15% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge barbell" href="images/barbell.png">
+            <img src="images/barbell.png" alt="barbell" width="600" height="400">
+          </a>
+          <div class="desc">Barbell &#36;160.6</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge gloves" href="images/gloves.png">
+            <img src="images/gloves.png" alt="gloves" width="600" height="400">
+          </a>
+          <div class="desc">Gloves &#36;6.78</div>
+          <p style="color:red;text-align:center;">10% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge stretch rope" href="images/stretchrope.png">
+            <img src="images/stretchrope.png" alt="stretchrope" width="600" height="400">
+          </a>
+          <div class="desc">Stretch Rope &#36;3.09</div>
+          <p style="color:red;text-align:center;">10% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge leg press" href="images/legpress.png">
+            <img src="images/legpress.png" alt="legpress" width="600" height="400">
+          </a>
+          <div class="desc">Leg Press &#36;6080.07</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="html/buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+    </container>
+    <session>
+      <!--testomonial heading-->
+      <h2 class="slidenm">Our happy Clients</h2>
+      <div class="tslide">
+        <!--inline css image layout, client review in a slider class with span and paragraph text-->
+        <img src="images/milan.jpg" alt="milan" style="width:150px">
+        <p><span>Milan Uprety</span> -CEO at Lurefox.</p>
+        <p class="tslidep"><q>You have an amazing classes and amazing trainers support. They helped me on weekend. This is what I call an “extra mile”. So I gave 5 stars for the modern design and if I could, I’d give 10 stars for services.</q></p>
+      </div>
+      <div class="tslide">
+        <!--inline css image layout, client review in a slider class with span and paragraph text-->
+        <img src="images/navaraj.jpg" alt="navaraj" style="width:150px">
+        <p><span>Navaraj Thapa</span> -Teacher.</p>
+        <p class="tslidep"><q>I join this fitness center and i would like to recommend it to every one interested in building a body or just to stay healthy. The customer service is very reactive.</q></p>
+      </div>
+      <div class="tslide">
+        <!--inline css image layout, client review in a slider class with span and paragraph text-->
+        <img src="images/shiba.jpg" alt="shiba" style="width:150px">
+        <p><span>Sushmita Rai</span> -Housewife.</p>
+        <p class="tslidep"><q>KTown fitness is a great place to  stay healthy and classy. I want to say thank you for the great team. I’ve recently joined kTown fitness and I am already loving it.</q></p>
+      </div>
+      <div class="tslide">
+        <!--inline css image layout, client review in a slider class with span and paragraph text-->
+        <img src="images/nabin.jpg" alt="nabin" style="width:150px">
+        <p><span>Navaraj Thapa</span> -Businessman.</p>
+        <p class="tslidep"><q>kTown is the best fintness center I’ve ever went! It has the best support over the town! Keep it up! I would totally recommend to all fellow friends</q></p>
+      </div>
+    </session>
+    <session>
+      <div class="sub">
+        <!--subscribe text-->
+        <h2>Subscribe here</h2>
+        <p>for the latest news and updates</p><br>
+        <!--subscription button linked to subscribe page-->
+        <a target="_blank" href="html/subscribe.html"><button class="button">SUBSCRIBE</button></a>
+      </div>
+    </session>
+    <footer>
+      <div class="foot">
+        <session>
+          <!--footer with social links and inline css-->
+          <p>Copyright &copy; 2017 KTown fitness center</p>
+          <a target="_blank" href="https://www.twitter.com/"> <img src="images/twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
+          <a target="_blank" href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook" style="width:30px;height:30px:"></a>
+          <a target="_blank" href="https://www.youtube.com/"> <img src="images/youtube.png" alt="youtube" style="width:30px;height:30px;"></a>
+          <a target="_blank" href="https://www.instagram.com/"> <img src="images/instagram.png" alt="instagram" style="width:29px;height:29px;"></a>
+        </session>
+        <address>
+          <!--address description-->
+          Kamaladi, Kathmandu 4460 &nbsp;<br>
+          013567383 9860146733 &nbsp;<br>
+          info@ktownfitness.com &nbsp;<br>
+        </address>
+      </div>
+    </footer>
+    <script>
+    /*internal javascript*/
+    var slideIndex = 0;
+    carousel();
+    /*slide index set to zero, slideindex increased with 3 seconds each for tslide class and displayed inside block*/
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("tslide");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+  </body>
+  </html>

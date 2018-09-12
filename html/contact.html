@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- language english USA-->
+<html lang="en-US">
+<head>
+  <title>Contact</title>
+  <!--Meta tags; html5 encoding version,description, author details with intial screen scaled to 1-->
+  <meta charset="UTF-8">
+  <meta name="description" content="kTown fitness center contact and feedback">
+  <meta name="author" content="Vijay Pathak">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--favicon icon-->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <!--external css-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!--external javascript-->
+  <script src="../js/contactf.js"></script>
+  <style>
+  /*input border layout*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  /*input box laypout*/
+  input[type=submit] {
+    color: black;
+    border: solid 2px black;
+    cursor: pointer;
+    padding: 20px;
+  }
+  /*inout text hover effect*/
+  input[type=submit]:hover {
+    color: black;
+    padding: 25px;
+    border: solid 2px black;
+  }
+  /*container class*/
+  .container {
+    font-family: courier;
+    background-color: #dbe0e0;
+    opacity: 0.9;
+    padding: 40px;
+  }
+  /*social links block layout*/
+  .social{
+    font-family: courier;
+    padding: 25px;
+  }
+  /*google map frame layout*/
+  iframe{
+    width: 100%;
+    padding: 0;
+  }
+  /*contact text*/
+  .hhead{
+    letter-spacing: 4px;
+    font-family: arial;
+    font-size:13px;
+    color:#3BB6B8;
+    margin: 5px;
+  }
+  /*location block layout*/
+  .contactdet{
+    font-family: courier;
+    padding: 20px;
+    background-color: #3BB6B8;
+    color: white;
+    text-align: left;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <ul>
+      <!--menubarlogo and favicon-->
+      <session id="logoh">
+        <a href="../index.html"><img src="../images/icon.png" alt="logo2"></a>
+        <a href="../index.html"><img src="../images/logo.png" alt="logo" style="width:200px;height:41px;"></a>
+      </session>
+      <!--menubar pages source-->
+      <li> <a href="contact.html">CONTACT</a></li>
+      <li> <a href="products.html">PRODUCTS</a></li>
+      <li> <a href="service.html">SERVICE</a></li>
+      <li> <a href="about.html">ABOUT</a></li>
+      <li> <a href="../index.html">HOME</a></li>
+    </ul>
+  </header>
+  <div>
+    <!--google map iframe-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3532.1995768905085!2d85.3227909!3d27.7111236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908ca41ac0d%3A0xcff9278da502e8ca!2sKamalpokhari+Street%2C+Kathmandu+44600!5e0!3m2!1sen!2snp!4v1502718208676" width="600" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <!--contact us form-->
+  <div class="hhead">
+    <h1>Contact us by filling the form below</h1>
+  </div>
+  <!--container with onsumit validation linked to external javascript-->
+  <div class="container">
+    <form name="contactf" onsubmit="validateForm()">
+      <!--lables with placeholders and input type text-->
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Your first name">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Your surname">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <!--scroll down options-->
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select>
+      <!--lables with placeholders and input type text-->
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="Enter your current address">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email address">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your feedback or message here" style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <!--location description-->
+  <div class="contactdet">
+    <h1 style="font-family:verdana;">Our location</h1>
+    <address style="text-align:left;">
+      <!--address description-->
+      <p>Adddress: Kamaladai-near city center, kathmandu 4460</p>
+      <p>Contact Number: 013567383 9860146733</p>
+      <p>Email: info@ktownfitness.com</p>
+      <p>P.O BOX 3453</p>
+    </address>
+    <!--services and products linked buttons which opens in new page-->
+    <a target="_blank" href="service.html"><button class="button">View services</button></a>
+    <a target="_blank" href="products.html"><button class="button">View products</button></a>
+  </div>
+  <session>
+    <!--social links and inline css-->
+    <div class="social">Follow us on social networks and find out what we're upto
+      <a target="_blank" href="https://www.twitter.com/"> <img src="../images/twitter.png" alt="twitter" style="width:50px;height:50px;"></a>
+      <a target="_blank" href="https://www.facebook.com/"> <img src="../images/facebook.png" alt="facebook" style="width:50px;height:50px;"></a>
+      <a target="_blank" href="https://www.youtube.com/"> <img src="../images/youtube.png" alt="youtube" style="width:50px;height:50px;"></a>
+      <a target="_blank" href="https://www.instagram.com/"> <img src="../images/instagram.png" alt="instagram" style="width:49px;height:49px;"></a>
+    </div>
+  </session>
+  <session>
+    <div class="sub">
+      <!--subscription block and button linked to subscribe page-->
+      <h2>Subscribe here</h2>
+      <p>for the latest news and updates</p><br>
+      <a target="_blank" href="subscribe.html"><button class="button">SUBSCRIBE</button></a>
+    </div>
+  </session>
+  <footer>
+    <div class="foot">
+      <session>
+        <!--footer with social links and inline css-->
+        <p>Copyright &copy; 2017 KTown fitness center</p>
+        <a target="_blank" href="https://www.twitter.com/"> <img src="../images/twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
+        <a target="_blank" href="https://www.facebook.com/"> <img src="../images/facebook.png" alt="facebook" style="width:30px;height:30px;"></a>
+        <a target="_blank" href="https://www.youtube.com/"> <img src="../images/youtube.png" alt="youtube" style="width:30px;height:30px;"></a>
+        <a target="_blank" href="https://www.instagram.com/"> <img src="../images/instagram.png" alt="instagram" style="width:29px;height:29px;"></a>
+      </session>
+      <address>
+        <!--address description-->
+        Kamaladi, Kathmandu 4460 &nbsp;<br>
+        013567383 9860146733 &nbsp;<br>
+        info@ktownfitness.com &nbsp;<br>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>

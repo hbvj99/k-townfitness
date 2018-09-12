@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- language english USA-->
+<html lang="en-US">
+<head>
+  <title>Products</title>
+  <!--Meta tags; html5 encoding version,description, author details with intial screen scaled to 1-->
+  <meta charset="UTF-8">
+  <meta name="description" content="kTown fitness center products">
+  <meta name="author" content="Vijay Pathak">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--favicon icon-->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <!--external css-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/subscribeb.css">
+  <style>
+  /*stretching products layout*/
+  .stretchingp{
+    text-align: center;
+    padding: 1px;
+    letter-spacing: 1px;
+    background-color: #687384;
+    color: white;
+    font-family: arial;
+  }
+  /*products gallery layout*/
+  .fgallery {
+    border: 1px solid #ccc;
+  }
+  /*prodyct gallery hover effect */
+  .fgallery:hover {
+    border: 1px solid #777;
+  }
+  /*product gallery images layout*/
+  .fgallery img {
+    width: 100%;
+    height: auto;
+  }
+  /*prodduct name*/
+  .desc {
+    text-align: center;
+  }
+  /*box layout*/
+  * {
+    box-sizing: border-box;
+  }
+  /*product layout*/
+  .responsive {
+    padding: 15px;;
+    float: left;
+    width: 24.99999%;
+  }
+  /*product gallery layout*/
+  @media only screen and (max-width: 700px){
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  /*resizable gallery product window layout*/
+  @media only screen and (max-width: 500px){
+    .responsive {
+      width: 100%;
+    }
+  }
+  /*product container class*/
+  .pgallery {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+    margin: 0px;
+  }
+  /*buy button class*/
+  .buyb{
+    color: white;
+    background-color: #5e5e63;
+    font-family: serif;
+    letter-spacing: 6px;
+    padding: 5px;
+    text-align: center;
+  }
+  /*buy button layout*/
+  .button2 {
+    background-color: #5e5e63;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 20px;
+  }
+  /*button2 hover effect layout*/
+  .button2:hover {
+    background-color: black;
+    color: white;
+    padding: 19.7px;
+  }
+  /*hide image slider*/
+  .islider {display:none;}
+  </style>
+</head>
+<body>
+  <header>
+    <ul>
+      <!--menubarlogo and favicon-->
+      <session id="logoh">
+        <a href="../index.html"><img src="../images/icon.png" alt="logo2"></a>
+        <a href="../index.html"><img src="../images/logo.png" alt="logo" style="width:200px;height:41px;"></a>
+      </session>
+      <!--menubar pages source-->
+      <li> <a href="contact.html">CONTACT</a></li>
+      <li> <a href="products.html">PRODUCTS</a></li>
+      <li> <a href="service.html">SERVICE</a></li>
+      <li> <a href="about.html">ABOUT</a></li>
+      <li> <a href="../index.html">HOME</a></li>
+    </ul>
+  </header>
+  <!--product slider with title-->
+  <div class="slider">
+    <a href="#cardio"><img class="islider" title="Click to view cardio category" src="../images/streadmill.jpg" alt="streadmill"></a>
+    <a href="#yoga"><img class="islider" title="Click to view yoga category" src="../images/syogasocks.jpg" alt="syogasocks"></a>
+    <a href="#supplements"><img class="islider" src="../images/ssupplement.jpg" alt="ssupplement"></a>
+    <a href="#cardio"><img class="islider" title="Click to view cardio category" src="../images/scardiorope.jpg" alt="scardiorope"></a>
+    <a href="#cardio"><img class="islider" title="Click to view cardio category" src="../images/scycle.jpg" alt="scycle"></a><br>
+  </div>
+  <!--stretchingp text class-->
+  <div class="stretchingp">
+    <h1 id="stretching">Stretching</h1>
+  </div>
+  <session>
+    <!--container class for product gallery-->
+    <container class="pgallery">
+      <!--reposive layout-->
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge stretch band" href="../images/yogastretch.png">
+            <img src="../images/yogastretch.png" alt="yogastretch" width="600" height="400">
+          </a>
+          <div class="desc">Stretch Band &#36;2.08</div>
+          <p style="color:red;text-align:center;">10% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge stretch rope" href="../images/stretchrope.png">
+            <img src="../images/stretchrope.png" alt="stretchrope" width="600" height="400">
+          </a>
+          <div class="desc">Stretch Rope &#36;4.06</div>
+          <p style="color:red;text-align:center;">15% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge skipping rope" href="../images/skippingrope.png">
+            <img src="../images/skippingrope.png" alt="skippingrope" width="600" height="400">
+          </a>
+          <div class="desc">Skipping Rope &#36;3.99</div>
+          <p style="color:red;text-align:center;">20% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge gym ball" href="../images/gymball.png">
+            <img src="../images/gymball.png" alt="gymball" width="600" height="400">
+          </a>
+          <div class="desc">Gym Ball &#36;2.04</div>
+          <p style="color:red;text-align:center;">20% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+    </container>
+  </session>
+  <!--weightlifting category-->
+  <div class="stretchingp">
+    <h1 class="weightlifting">Weight Lifting</h1>
+  </div>
+  <session>
+    <container class="pgallery">
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge barbell" href="../images/barbell.png">
+            <img src="../images/barbell.png" alt="barbell" width="600" height="400">
+          </a>
+          <div class="desc">Barbell &#36;160.06</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge leg press" href="../images/legpress.png">
+            <img src="../images/legpress.png" alt="legpress" width="600" height="400">
+          </a>
+          <div class="desc">Leg Press &#36;6080.07</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge dumbbell" href="../images/dumbbell.png">
+            <img src="../images/dumbbell.png" alt="dumbbell" width="600" height="400">
+          </a>
+          <div class="desc">Dumbbell &#36;5.99</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge weight lifting bench" href="../images/weightbench.png">
+            <img src="../images/weightbench.png" alt="weightbench" width="600" height="400">
+          </a>
+          <div class="desc">Weight Lifting Bench &#36;100.04</div>
+          <p style="color:red;text-align:center;">15% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+    </container>
+  </session>
+  <!--cardio category-->
+  <div class="stretchingp">
+    <h1 id="cardio">Cardio</h1>
+  </div>
+  <session>
+    <container class="pgallery">
+      <!--reposive layout-->
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge treadmill" href="../images/treadmill.png">
+            <img src="../images/treadmill.png" alt="treadmill" width="600" height="400">
+          </a>
+          <div class="desc">Treadmill &#36;440.66</div>
+          <p style="color:red;text-align:center;">10% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge cycle" href="../images/cycle.png">
+            <img src="../images/cycle.png" alt="cycle" width="600" height="400">
+          </a>
+          <div class="desc">Cycle &#36;6080.07</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge cardiorope" href="../images/rope.png">
+            <img src="../images/rope.png" alt="rope" width="600" height="400">
+          </a>
+          <div class="desc">Cardio Rope &#36;5.99</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge stair mill" href="../images/stairmill.png">
+            <img src="../images/stairmill.png" alt="stairmill" width="600" height="400">
+          </a>
+          <div class="desc">Stair Mill &#36;400.56</div>
+          <p style="color:red;text-align:center;">25% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+    </container>
+  </session>
+  <!--yoga category-->
+  <div class="stretchingp">
+    <h1 id="yoga">Yoga</h1>
+  </div>
+  <session>
+    <container class="pgallery">
+      <!--reposive layout-->
+      <div class="responsive">
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge yoga mat" href="../images/yogamat.png">
+            <img src="../images/yogamat.png" alt="yogamat" width="600" height="400">
+          </a>
+          <div class="desc">Yoga Mat &#36;4.6</div>
+          <p style="color:red;text-align:center;">10% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge yoga strap" href="../images/yogabelt.png">
+            <img src="../images/yogabelt.png" alt="yogabelt" width="600" height="400">
+          </a>
+          <div class="desc">Yoga Strap &#36;6.06</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge yoga block" href="../images/yogablock.png">
+            <img src="../images/yogablock.png" alt="yogablock" width="600" height="400">
+          </a>
+          <div class="desc">Yoga Block &#36;5.79</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge yoga socks" href="../images/yogasocks.png">
+            <img src="../images/yogasocks.png" alt="yogasocks" width="600" height="400">
+          </a>
+          <div class="desc">Yoga Socks &#36;6.56</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+    </container>
+  </session>
+  <div class="stretchingp">
+    /*supplements category*/
+    <h1 id="supplements">Supplements</h1>
+  </div>
+  <session>
+    <container class="pgallery">
+      <!--reposive layout-->
+      <div class="responsive">
+        <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+        <div class="fgallery">
+          <a target="_blank" title="Click to enlarge vitamin d3" href="../images/vitamind3.png">
+            <img src="../images/vitamind3.png" alt="vitamind3" width="600" height="400">
+          </a>
+          <div class="desc">Vitamin D3 &#36;28.49</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge men testosterone supplement" href="../images/mentestosterone.png">
+            <img src="../images/mentestosterone.png" alt="mentestosterone" width="600" height="400">
+          </a>
+          <div class="desc">Men Testosterone supplement &#36;20.78</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge potentprobiotic 35 billion cfus" href="../images/potentprobiotic.png">
+            <img src="../images/potentprobiotic.png" alt="potentprobiotic" width="600" height="400">
+          </a>
+          <div class="desc">Potentprobiotic 35 Billion CFUS &#36;26.9</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <!--reposive layout-->
+        <div class="fgallery">
+          <!--product with image and description, ascii code, title, image map, button linked to buy page and inline css to adjust image height-->
+          <a target="_blank" title="Click to enlarge biotin supplement 500 mcg" href="../images/biotin.png">
+            <img src="../images/biotin.png" alt="biotin" width="600" height="400">
+          </a>
+          <div class="desc">Biotin Supplement 500 MCG&#36;13.56</div>
+          <p style="color:red;text-align:center;">5% OFF</p>
+          <div class="buyb">
+            <a target="_blank" href="buy.html"><button class="button2">BUY</button></a>
+          </div>
+        </div>
+      </div>
+    </container>
+  </session>
+  <div class="sub">
+    <!--subscription block and button linked to subscribe page-->
+    <h2>Subscribe here</h2>
+    <p>for the latest news and updates</p><br>
+    <a target="_blank" href="subscribe.html"><button class="button">SUBSCRIBE</button></a>
+  </div>
+  <footer>
+    <div class="foot">
+      <session>
+        <!--footer with social links and inline css-->
+        <p>Copyright &copy; 2017 KTown fitness center</p>
+        <a target="_blank" href="https://www.twitter.com/"> <img src="../images/twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
+        <a target="_blank" href="https://www.facebook.com/"> <img src="../images/facebook.png" alt="facebook" style="width:30px;height:30px;"></a>
+        <a target="_blank" href="https://www.youtube.com/"> <img src="../images/youtube.png" alt="youtube" style="width:30px;height:30px;"></a>
+        <a target="_blank" href="https://www.instagram.com/"> <img src="../images/instagram.png" alt="instagram" style="width:29px;height:29px;"></a>
+      </session>
+      <address>
+        <!--address description-->
+        Kamaladi, Kathmandu 4460 &nbsp;<br>
+        013567383 9860146733 &nbsp;<br>
+        info@ktownfitness.com &nbsp;<br>
+      </address>
+    </div>
+  </footer>
+  <!--external javascript-->
+  <script src="../js/slider.js"></script>
+</body>
+</html>
